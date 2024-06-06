@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yết Kiêu - Luân hồi Thủy Long Bồ Tát</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <header>
+        <h1>Yết Kiêu - Luân hồi Thủy Long Bồ Tát</h1>
+    </header>
+    <div class="container">
+        <div class="main">
+            <h2>Danh sách các phần</h2>
+            
+            <div class="section">
+                <h3>Phần 1: Cội Nguồn</h3>
+                <ul>
+                    <li><a href="chapter1.html">Chương 1: Quyết Định Luân Hồi</a></li>
+                    <li><a href="#">Chương 2: Giấc Mơ Kỳ Lạ</a></li>
+                    <li><a href="#">Chương 3: Khởi Đầu Của Hữu Thế</a></li>
+                    <li><a href="#">Chương 4: Rời Quê Hương</a></li>
+                    <li><a href="#">Chương 5: Gặp Gỡ Thầy Dạy Võ</a></li>
+                    <li><a href="#">Chương 6: Rèn Luyện Khả Năng</a></li>
+                    <li><a href="#">Chương 7: Đối Mặt Với Thử Thách</a></li>
+                    <li><a href="#">Chương 8: Học Hỏi Chiến Lược Quân Sự</a></li>
+                    <li><a href="#">Chương 9: Cứu Đoàn Thuyền Buôn</a></li>
+                    <li><a href="#">Chương 10: Trở Thành Người Hùng</a></li>
+                    <li><a href="#">Chương 11: Gặp Gỡ Hưng Đạo Đại Vương</a></li>
+                    <li><a href="#">Chương 12: Gia Nhập Quân Đội Triều Trần</a></li>
+                    <li><a href="#">Chương 13: Thể Hiện Tài Năng</a></li>
+                    <li><a href="#">Chương 14: Nhận Nhiệm Vụ Quan Trọng</a></li>
+                    <li><a href="#">Chương 15: Chiến Công Đầu Tiên</a></li>
+                    <li><a href="#">Chương 16: Giao Lưu Với Các Tướng Lĩnh</a></li>
+                    <li><a href="#">Chương 17: Bảo Vệ Thủy Lộ</a></li>
+                    <li><a href="#">Chương 18: Chuẩn Bị Cho Trận Chiến</a></li>
+                    <li><a href="#">Chương 19: Sẵn Sàng Đối Đầu Quân Nguyên-Mông</a></li>
+                    <li><a href="#">Chương 20: Tâm Sự Với Đồng Đội</a></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Phần 2: Chống quân Mông Nguyên lần I</h3>
+                <ul>
+                    <!-- Các chương của phần 2 sẽ được thêm sau -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Phần 3: Chống quân Mông Nguyên lần II</h3>
+                <ul>
+                    <!-- Các chương của phần 3 sẽ được thêm sau -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Phần 4: Chống quân Mông Nguyên lần III</h3>
+                <ul>
+                    <!-- Các chương của phần 4 sẽ được thêm sau -->
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Phần 5: Đại kết cục</h3>
+                <ul>
+                    <!-- Các chương của phần 5 sẽ được thêm sau -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.section h3').forEach(section => {
+            section.addEventListener('click', () => {
+                const ul = section.nextElementSibling;
+                if (ul.style.display === 'block') {
+                    ul.style.display = 'none';
+                } else {
+                    ul.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
