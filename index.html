@@ -12,6 +12,21 @@
     </header>
     <div class="container">
         <div class="main">
+            <div class="description">
+                <img src="biatruyen.png" alt="Bìa Truyện">
+                <p id="short-description">"Yết Kiêu - Luân hồi Thủy Long Bồ Tát" là một câu chuyện kết hợp giữa lịch sử và tôn giáo, vẽ nên bức tranh hùng tráng của những cuộc kháng chiến chống quân xâm lược Nguyên-Mông.</p>
+                <div id="full-description" style="display: none;">
+                    <p>Trong dòng chảy bất tận của lịch sử dân tộc Việt Nam, có biết bao nhiêu vị anh hùng đã đứng lên chiến đấu bảo vệ quê hương. Trong số đó, Yết Kiêu, một danh tướng huyền thoại thời Trần, không chỉ là một biểu tượng của lòng dũng cảm và trí tuệ, mà còn ẩn chứa một bí mật thần thánh: ngài chính là sự luân hồi của Thủy Long Bồ Tát.</p>
+                    <p>"Yết Kiêu - Luân hồi Thủy Long Bồ Tát" là một câu chuyện kết hợp giữa lịch sử và tôn giáo, vẽ nên bức tranh hùng tráng của những cuộc kháng chiến chống quân xâm lược Nguyên-Mông. Không chỉ là một cuộc chiến giữa hai quốc gia, đó còn là hành trình khám phá bản thân, tìm kiếm sức mạnh từ trong tâm hồn và chiến đấu vì lý tưởng cao đẹp.</p>
+                    <p>Bồ Tát Thủy Long đã tuyên bố:<br>
+                    "Dục thiên bất yểm ngã nhãn<br>
+                    Yếu địa bất mai ngã tâm.<br>
+                    Dục trí tuệ tựa thương hải<br>
+                    Yếu lực lượng tựa lôi đình."<br>
+                    Tạm dịch: Ta muốn thiên này không che được ta mắt, đất này không vùi được ta tâm. Ta muốn trí tuệ mênh mong như biển cả, sức mạnh sánh tựa sấm vang xa.</p>
+                </div>
+                <button id="read-more-btn">Đọc thêm</button>
+            </div>
             <h2>Danh sách các phần</h2>
             
             <div class="section">
@@ -79,6 +94,16 @@
                     ul.style.display = 'block';
                 }
             });
+        });
+
+        const readMoreBtn = document.getElementById('read-more-btn');
+        const shortDescription = document.getElementById('short-description');
+        const fullDescription = document.getElementById('full-description');
+
+        readMoreBtn.addEventListener('click', () => {
+            shortDescription.style.display = 'none';
+            fullDescription.style.display = 'block';
+            readMoreBtn.style.display = 'none';
         });
     </script>
 </body>
